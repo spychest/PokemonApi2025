@@ -1,0 +1,13 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Pokeapi
+            description: A pokemon API to get pokemon's informations from G1 to G8!
+            version: 1.0.0
+    areas:
+      default:
+        path_patterns: [ ^/api ]
+      pokemon:
+        with_attribute: true
+      type:
+        with_attribute: true
