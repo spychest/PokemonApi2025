@@ -17,6 +17,11 @@ services:
       MYSQL_DATABASE: 'db'
       MYSQL_USER: ${USER}
       MYSQL_PASSWORD: ${PASSWORD}
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3322:3322'
+    expose:
+      - '3322'
     volumes:
       - pokeapi-data:/var/lib/mysql
     networks:
